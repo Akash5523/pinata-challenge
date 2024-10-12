@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
+    color: #333;
+    padding: 0; /* Remove padding on the body */
+    height: 100vh;
+    overflow: hidden; /* Disable scroll */
+}
+
+.header {
+    font-size: 30px;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+.App {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 40px;
+    overflow: hidden;
+}
+
+.upload-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+    border-radius: 10px;
+    padding: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 500px; /* Limit max width for better appearance */
+    margin: 0;
+}
+
+.upload-message {
+    color: green; /* Change success message color */
+    font-weight: bold;
+}
+
+.progress-bar {
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    margin-top: 10px;
+    height: 10px;
+    width: 100%;
+}
+
+.progress-fill {
+    background-color: #4caf50; /* Green color for progress fill */
+    height: 100%;
+    border-radius: 5px;
+    transition: width 0.3s ease; /* Smooth transition for progress fill */
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.file-input {
+    display: flex;
+    margin: 15px 0;
+    align-items: flex-start;
+}
+
+.upload-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50; /* Green button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.upload-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.upload-button:disabled {
+    background-color: #ccc; /* Grey color when disabled */
+    cursor: not-allowed; /* Change cursor to indicate disabled */
+}
