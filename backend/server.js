@@ -10,7 +10,9 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // Middleware
-app.use(cors());
+app.use(cors({
+    origin: 'https://frontend-bowrl771l-akash5523s-projects.vercel.app' // Update this with your actual frontend URL
+}));
 app.use(express.json());
 
 // Define a root route
